@@ -1,5 +1,5 @@
 import React from 'react'
-import {  Typography, Grid, Paper } from '@material-ui/core';
+import {  Typography, Grid } from '@material-ui/core';
 import Container from '@material-ui/core/Container';
 import LocalHospitalIcon from '@material-ui/icons/LocalHospital';
 import CheckCircleIcon from '@material-ui/icons/CheckCircle';
