@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Deploying Covid-19 App
+name: Deploying Covid-19 Application
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
