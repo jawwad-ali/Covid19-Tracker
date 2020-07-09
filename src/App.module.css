@@ -1,0 +1,17 @@
+.container{
+    height:100vh;
+    flex-direction: column;
+}
+.title{
+    font-size:38px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0px !important;
+    padding:20px;
+}   
+.main{
+    height:100px;
+}
+.comp{
+    background-color: red;
+}

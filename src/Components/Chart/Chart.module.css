@@ -1,0 +1,7 @@
+.container {
+    display: flex;
+    width: 100%;
+    position: relative;
+    top:200px;
+    text-align: center !important; 
+}
