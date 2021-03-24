@@ -63,7 +63,7 @@ export default function Chart({ data: { confirmed, recovered, deaths }, country 
     return (
         <div >
             <Container maxWidth="lg">
-                <Grid item xs={10} md={10} lg={10} xl={10} className={styles.container}>
+                <Grid item xs={12} md={10} lg={10} xl={10} className={styles.container}>
                     {country ? BarChart : LineChart}
                 </Grid>
             </Container>

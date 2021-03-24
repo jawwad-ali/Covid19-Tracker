@@ -2,11 +2,5 @@
     width: 100%;
     position: relative;
     margin-top: 150px !important;
-    margin-left: 100px ;
-}
-
-@media only screen and (max-width:600px) {
-    .container {
-        margin-left: -500px;
-    }
+    margin-left: 100px;
 }
