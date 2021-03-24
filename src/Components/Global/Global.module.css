@@ -1,44 +1,46 @@
-.main{
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+.main {
     text-align: center;
-    width:100%;
+    width: 100%;
     margin-top: 10px;
 }
-.datadiv{
+
+.globalContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.datadiv {
     margin-top: 30px !important;
-    height:200px;
-    background-image: linear-gradient(aquamarine, aqua);
+    height: 150px;
+    background-color: rgb(47, 128, 237);
     width: 200px !important;
     font-weight: bold;
-    border:0.5px solid blue;
-    border-collapse: separate;
+    margin-bottom: 30px !important;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: transform 100ms ease-in;
 }
-.icon{
-    margin-top:20px;
-    margin-bottom: 50px;
-    font-size:30px !important;
-    color:white;
-    text-align: center !important;
-    position: relative;
-    left:90px;
+
+.datadiv:hover {
+    transform: scale(1.07);
+    cursor: pointer;
 }
-.icon_death{
-    margin-top:20px;
-    margin-bottom: 50px;
-    font-size:30px !important;
-    color:white;
-    text-align: center !important;
-    position:relative;
-    position: relative;
-    left:70px;
+
+
+.text {
+    color: white;
+    font-size: 18px !important;
+    font-family: 'Josefin Sans', cursive;
 }
-.figure{
+
+.figure {
     text-align: center;
-    font-size:35px !important;
-    color:white;
-    margin-top: 60px;
-}
-.text{
-    color:white;
-    margin-top: 20px !important;
-    font-size:18px !important;
+    font-size: 35px !important;
+    color: white;
+    font-family: 'Josefin Sans', cursive;
+
 }

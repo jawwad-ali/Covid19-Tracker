@@ -1,17 +1,26 @@
-.container{
-    height:100vh;
+.container {
+    height: 100vh;
     flex-direction: column;
 }
-.title{
-    font-size:38px;
-    font-weight: bold;
+
+.title {
+    font-size: 35px;
+    font-weight: bolder;
+    text-transform: uppercase;
     text-align: center;
-    margin: 0px !important;
-    padding:20px;
-}   
-.main{
-    height:100px;
+    font-family: 'Josefin Sans', cursive;
+    box-sizing: border-box;
+    height: 22px;
+    color: #f7f7f7;
 }
-.comp{
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(242, 56, 65) !important;
+}
+
+.comp {
     background-color: red;
 }

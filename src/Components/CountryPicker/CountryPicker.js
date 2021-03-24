@@ -1,37 +1,40 @@
-import React , {useState , useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import InputLabel from '@material-ui/core/InputLabel';
 import MenuItem from '@material-ui/core/MenuItem';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
+import Container from '@material-ui/core/Container';
 
-import {fetchCountryData} from '../../api'
+import { fetchCountryData } from '../../api'
 import styles from './Country.module.css'
 
-export default function CountryPicker( {handleCountryChange}) {
+export default function CountryPicker({ handleCountryChange }) {
 
-    const [ fetchedCountries , setFetchCountries] = useState([])
+    const [fetchedCountries, setFetchCountries] = useState([])
 
-    useEffect(()=>{
+    useEffect(() => {
         const fetchCountries = async () => {
-            setFetchCountries(await fetchCountryData() )
+            setFetchCountries(await fetchCountryData())
         }
         fetchCountries()
-    } , [setFetchCountries])
+    }, [setFetchCountries])
 
 
     return (
-        <div className={styles.container}>
-            <FormControl className={styles.dropdown}>
-                <InputLabel className={styles.label} id="demo-simple-select-label">Select Country</InputLabel>
-                <Select
-                    labelId="demo-simple-select-label"
-                    id="demo-simple-select"
-                    defaultValue=""
-                    onChange = { (e)=>handleCountryChange(e.target.value)} 
-                >
-                    {fetchedCountries.map((country , i) => <MenuItem key={i} value={country}>{country}</MenuItem>)}
-                </Select>
-            </FormControl>
-        </div>
+        <Container maxWidth="lg">
+            <div className={styles.container}>
+                <FormControl className={styles.dropdown}>
+                    <InputLabel className={styles.label} id="demo-simple-select-label">Select Country</InputLabel>
+                    <Select
+                        labelId="demo-simple-select-label"
+                        id="demo-simple-select"
+                        defaultValue=""
+                        onChange={(e) => handleCountryChange(e.target.value)}
+                    >
+                        {fetchedCountries.map((country, i) => <MenuItem key={i} value={country}>{country}</MenuItem>)}
+                    </Select>
+                </FormControl>
+            </div>
+        </Container>
     )
 }

@@ -2,11 +2,13 @@
     position: relative;
     top:100px;
     bottom:100px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .dropdown{
     width: 150px;
 }
 .label{
-    font-weight: bold;
+    font-weight: bold; 
 }
